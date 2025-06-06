@@ -27,7 +27,7 @@ const Header = () => {
       <div className="container">
         <div className="nav-wrapper">
           <div className="logo">
-            <h2>Shreyas Gowda P</h2>
+            <h2>Suhas K  Gowda </h2>
           </div>
           
           <nav className={`nav ${isMobileMenuOpen ? 'nav-open' : ''}`}>

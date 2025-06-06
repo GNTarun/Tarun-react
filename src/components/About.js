@@ -36,7 +36,7 @@ const About = () => {
                 <p>3rd Year CSE</p>
               </div>
               <div className="stat">
-                <h3>9.1</h3>
+                <h3>7.5</h3>
                 <p>Current GPA</p>
               </div>
             </div>
