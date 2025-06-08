@@ -1,3 +1,17 @@
+/* Color System */
+:root {
+  --color-primary: #6c63ff;
+  --color-secondary: #764ba2;
+  --color-accent: #ff6b6b;
+  --color-bg: #f4f6fb;
+  --color-bg-dark: #2c3e50;
+  --color-bg-light: #fff;
+  --color-text: #232946;
+  --color-text-light: #fff;
+  --color-border: #e0e6ed;
+  --color-shadow: rgba(108, 99, 255, 0.08);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +21,14 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  color: #333;
+  color: var(--color-text);
+  background: var(--color-bg);
   scroll-behavior: smooth;
 }
 
 .App {
   min-height: 100vh;
+  background: var(--color-bg);
 }
 
 /* Global Styles */
@@ -29,28 +45,31 @@ body {
 .btn {
   display: inline-block;
   padding: 12px 30px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  color: var(--color-text-light);
   text-decoration: none;
   border-radius: 25px;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(.4,2,.6,1);
   border: none;
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
+  box-shadow: 0 4px 16px var(--color-shadow);
 }
 
 .btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 10px 24px var(--color-shadow);
+  opacity: 0.95;
 }
 
 .section-title {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: #2c3e50;
+  color: var(--color-bg-dark);
   position: relative;
+  letter-spacing: 1px;
 }
 
 .section-title::after {
@@ -61,7 +80,7 @@ body {
   transform: translateX(-50%);
   width: 80px;
   height: 3px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
   border-radius: 2px;
 }
 
@@ -78,7 +97,7 @@ body {
 }
 
 .fade-in-up {
-  animation: fadeInUp 0.8s ease-out;
+  animation: fadeInUp 0.8s cubic-bezier(.4,2,.6,1);
 }
 
 /* Responsive Design */
@@ -86,11 +105,9 @@ body {
   .container {
     padding: 0 15px;
   }
-  
   .section-padding {
     padding: 60px 0;
   }
-  
   .section-title {
     font-size: 2rem;
   }

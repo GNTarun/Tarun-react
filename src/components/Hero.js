@@ -30,7 +30,7 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-text fade-in-up">
             <h1>
-              Hi, I'm <span className="highlight">Suhas K Gowda </span>
+              Hi, I'm <span className="highlight">Tarun G N </span>
             </h1>
             <h2 className="hero-subtitle">
               CSE Student | Developer | UI/UX Designer | Innovation Enthusiast

@@ -45,7 +45,7 @@ const Projects = () => {
       image: "💻",
       category: "frontend",
       technologies: ["HTML", "CSS", "JavaScript", "Responsive Design"],
-      github: "https://github.com/suhas0511",
+      github: "https://github.com/",
       live: "#",
       featured: false
     },
